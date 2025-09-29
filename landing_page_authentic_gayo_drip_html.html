@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authentic Gayo Drip — Drip Bag Coffee Asli Gayo Arabica</title>
+  <meta name="description" content="Authentic Gayo Drip — Drip bag coffee Arabica Gayo. Praktis, nikmat, dan natural. Pesan langsung via WhatsApp." />
+  <meta property="og:title" content="Authentic Gayo Drip — Drip Bag Coffee Asli Gayo Arabica" />
+  <meta property="og:description" content="Kopi Gayo Arabica dalam kemasan drip bag. Nikmat, praktis, natural. Pesan sekarang!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=1600&auto=format&fit=crop" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0d0a;           /* kopi hitam */
+      --ink:#111111;
+      --cream:#f4efe7;        /* kertas kopi */
+      --sand:#e6dccb;         /* beige lembut */
+      --accent:#7a5c3a;       /* earthy brown */
+      --accent-2:#b08968;     /* light brown */
+      --muted:#6b6b6b;
+      --success:#2e7d32;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.15);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    .nav{position:sticky;top:0;backdrop-filter:saturate(160%) blur(8px);background:rgba(15,13,10,.6);z-index:50;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow)}
+    .brand h1{font-family:"Playfair Display",serif;font-size:20px;letter-spacing:.3px;margin:0}
+    .menu{display:flex;gap:18px;font-weight:600}
+    .menu a{opacity:.85}
+    .menu a:hover{opacity:1}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding-block:56px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;font-size:12px}
+    .title{font-family:"Playfair Display",serif;font-size:46px;line-height:1.08;margin:14px 0}
+    .subtitle{color:#ddd;max-width:48ch}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.03));font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,var(--accent-2),var(--accent));border-color:rgba(0,0,0,.2);color:#1b120a}
+    .btn:hover{transform:translateY(-1px)}
+    .hero-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.08)}
+
+    /* Sections */
+    section{padding-block:56px;border-top:1px solid rgba(255,255,255,.06)}
+    h2.section-title{font-family:"Playfair Display",serif;font-size:34px;margin:0 0 18px}
+    p.section-sub{color:#d8d5cf;margin-top:-6px}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card h3{margin:6px 0 6px;font-size:18px}
+    .card p{color:#ddd;margin:0}
+
+    /* Catalog */
+    .catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{background:#14120f;border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .product img{aspect-ratio:4/3;object-fit:cover}
+    .product .info{padding:16px;display:grid;gap:10px}
+    .price{font-weight:800;font-size:20px}
+    .variant{color:#dcd6cd;font-size:14px}
+    .qty{display:flex;align-items:center;gap:8px}
+    .qty input{width:72px;padding:8px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#0f0d0a;color:#fff}
+    .buy{margin-top:auto;padding:16px;border-top:1px solid rgba(255,255,255,.08);display:flex;gap:12px}
+    .buy .btn{width:100%;justify-content:center}
+
+    /* Testimonials */
+    .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .quote{background:#14120f;border:1px solid rgba(255,255,255,.08);border-left:4px solid var(--accent-2);padding:18px;border-radius:14px}
+    .quote p{margin:0 0 8px}
+    .quote .name{color:#d2c6b6;font-size:14px}
+
+    /* About */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .about img{border-radius:var(--radius);border:1px solid rgba(255,255,255,.08)}
+
+    /* CTA */
+    .big-cta{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:28px}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.08);padding-block:32px;background:#0e0c09}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+    .socials{display:flex;gap:12px}
+    .chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+    .small{font-size:12px;color:#c9c2b7}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr;}
+      .about{grid-template-columns:1fr}
+      .catalog,.features,.testi{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .catalog,.features,.testi{grid-template-columns:1fr}
+      .menu{display:none}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Authentic Gayo Drip</h1>
+      </div>
+      <div class="menu">
+        <a href="#tentang">Tentang</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#pesan">Pesan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="container hero">
+    <div>
+      <span class="badge">Arabica Gayo • Natural • Fresh Roast</span>
+      <h2 class="title">Kopi Gayo dalam <em>Drip Bag</em> — praktis, natural, dan nikmat di mana saja.</h2>
+      <p class="subtitle">Authentic Gayo Drip menghadirkan pengalaman kopi arabika Gayo yang bersih dengan cita rasa rempah halus, cokelat, dan manis natural. Cukup robek, kaitkan, seduh. Selesai.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#katalog">Lihat Katalog</a>
+        <a class="btn" href="#pesan">Pesan via WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1507133750040-4a8f570215d2?q=80&w=1600&auto=format&fit=crop" alt="Drip bag coffee di cangkir"/>
+    </div>
+  </header>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="container about">
+      <div>
+        <h2 class="section-title">Tentang Authentic Gayo Drip</h2>
+        <p class="section-sub">Drip bag coffee berbahan 100% Arabica Gayo pilihan.</p>
+        <p>Kami memilih biji kopi Gayo dari ketinggian pegunungan Aceh, diproses dengan teliti, lalu digiling dan dikemas segar ke dalam kemasan <em>drip bag</em> agar aromanya terkunci. Tanpa alat, tanpa repot—cukup tuang air panas.</p>
+        <ul>
+          <li>Origin: Gayo, Aceh — Arabica</li>
+          <li>Roast: Medium</li>
+          <li>Notes: Rempah halus, cokelat, manis karamel</li>
+          <li>Berat bersih per sachet: 10–12 g (dapat disesuaikan)</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?q=80&w=1400&auto=format&fit=crop" alt="Biji kopi Gayo"/>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section id="keunggulan">
+    <div class="container">
+      <h2 class="section-title">Keunggulan Produk</h2>
+      <p class="section-sub">Alasan kenapa kopi drip kami jadi favorit.</p>
+      <div class="features">
+        <div class="card">
+          <h3>100% Arabica Gayo</h3>
+          <p>Asal tunggal dari Gayo dengan karakter rasa yang konsisten dan bersih.</p>
+        </div>
+        <div class="card">
+          <h3>Praktis & Higienis</h3>
+          <p>Kemasan sekali seduh, mudah dibawa, cocok untuk kantor, rumah, dan perjalanan.</p>
+        </div>
+        <div class="card">
+          <h3>Rasa Natural</h3>
+          <p>Tasting notes rempah, cokelat, serta manis karamel yang seimbang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG / PENJUALAN LANGSUNG -->
+  <section id="katalog">
+    <div class="container">
+      <h2 class="section-title">Katalog & Harga</h2>
+      <p class="section-sub">Pilih varian favoritmu, lalu pesan langsung via WhatsApp.</p>
+      <div class="catalog">
+        <!-- Product 1 -->
+        <article class="product" data-name="Drip Bag Single Pack" data-price="15000">
+          <img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?q=80&w=1200&auto=format&fit=crop" alt="Drip bag single pack" />
+          <div class="info">
+            <h3>Drip Bag Single Pack</h3>
+            <span class="variant">1 sachet • 10–12 g</span>
+            <div class="price">Rp <span class="js-price">15.000</span></div>
+            <div class="qty">
+              <label for="qty1">Qty</label>
+              <input id="qty1" type="number" min="1" value="1" inputmode="numeric" />
+            </div>
+          </div>
+          <div class="buy">
+            <button class="btn primary js-wa">Beli via WhatsApp</button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product" data-name="Drip Bag Paket 5" data-price="70000">
+          <img src="https://images.unsplash.com/photo-1504151932400-72d4384f04b3?q=80&w=1200&auto=format&fit=crop" alt="Paket 5 drip bag" />
+          <div class="info">
+            <h3>Paket 5</h3>
+            <span class="variant">5 sachet • Hemat</span>
+            <div class="price">Rp <span class="js-price">70.000</span></div>
+            <div class="qty">
+              <label for="qty2">Qty</label>
+              <input id="qty2" type="number" min="1" value="1" inputmode="numeric" />
+            </div>
+          </div>
+          <div class="buy">
+            <button class="btn primary js-wa">Beli via WhatsApp</button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product" data-name="Drip Bag Paket 10" data-price="130000">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Paket 10 drip bag" />
+          <div class="info">
+            <h3>Paket 10</h3>
+            <span class="variant">10 sachet • Paling laris</span>
+            <div class="price">Rp <span class="js-price">130.000</span></div>
+            <div class="qty">
+              <label for="qty3">Qty</label>
+              <input id="qty3" type="number" min="1" value="1" inputmode="numeric" />
+            </div>
+          </div>
+          <div class="buy">
+            <button class="btn primary js-wa">Beli via WhatsApp</button>
+          </div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:12px">*Harga dapat disesuaikan. Ubah angka di atribut <code>data-price</code> pada setiap produk.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni">
+    <div class="container">
+      <h2 class="section-title">Apa Kata Mereka</h2>
+      <div class="testi">
+        <div class="quote">
+          <p>“Aromanya mantap, seduhnya gampang. Cocok buat kerja.”</p>
+          <div class="name">— Raka, Medan</div>
+        </div>
+        <div class="quote">
+          <p>“Rasanya clean dan ada manis karamel. Repeat order!”</p>
+          <div class="name">— Sinta, Jakarta</div>
+        </div>
+        <div class="quote">
+          <p>“Paket 10 paling worth it. Kirim cepat!”</p>
+          <div class="name">— Wahyu, Bandung</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PESAN -->
+  <section id="pesan">
+    <div class="container">
+      <div class="big-cta">
+        <h2 class="section-title" style="margin:0">Siap seduh sekarang?</h2>
+        <p class="section-sub">Klik tombol di bawah untuk pesan via WhatsApp. Tanyakan stok atau request custom gift.</p>
+        <a class="btn primary" id="wa-global" href="#">Pesan via WhatsApp</a>
+        <span class="small">Nomor WhatsApp: 085269842357</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <div class="logo" aria-hidden="true"></div>
+          <h1>Authentic Gayo Drip</h1>
+        </div>
+        <p class="small">© <span id="year"></span> Authentic Gayo Drip. Semua hak cipta dilindungi.</p>
+        <p class="small">Brand: Authentic gayo drip</p>
+      </div>
+      <div>
+        <div class="chip">Kontak</div>
+        <p class="small">WhatsApp: 085269842357</p>
+        <p class="small">Email: (isi jika ada)</p>
+      </div>
+      <div>
+        <div class="chip">Sosial</div>
+        <div class="socials">
+          <a class="btn" aria-label="Instagram" href="https://instagram.com/authentic_gayodrip" target="_blank">Instagram</a>
+          <a class="btn" aria-label="TikTok" href="https://www.tiktok.com/@authenticgayodrip" target="_blank">TikTok</a>
+          <a class="btn" aria-label="Shopee" href="https://shopee.co.id/authenticgayodrip" target="_blank">Shopee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Helper: format rupiah (for dynamic usage if needed)
+    function rupiah(x){
+      return new Intl.NumberFormat('id-ID').format(x);
+    }
+
+    // WhatsApp order integration
+    const WA_NUMBER = '6285269842357'; // 62 + 85269842357 (tanpa 0)
+
+    // Global WA CTA
+    const waGlobal = document.getElementById('wa-global');
+    if(waGlobal){
+      const text = encodeURIComponent(
+        'Halo Authentic Gayo Drip! Saya mau pesan drip bag. Tolong info stok & harga ya.'
+      );
+      waGlobal.href = `https://wa.me/${WA_NUMBER}?text=${text}`;
+      waGlobal.setAttribute('target','_blank');
+    }
+
+    // Per produk
+    document.querySelectorAll('.product').forEach((card,idx)=>{
+      const btn = card.querySelector('.js-wa');
+      const input = card.querySelector('input[type=number]');
+      const name = card.dataset.name;
+      const price = parseInt(card.dataset.price||0,10);
+      btn.addEventListener('click',()=>{
+        const qty = Math.max(parseInt(input.value||'1',10),1);
+        const subtotal = price*qty;
+        const msg = [
+          'Halo Authentic Gayo Drip!',
+          `Saya mau pesan: ${name}`,
+          `Qty: ${qty}`,
+          price? `Per pcs: Rp ${rupiah(price)}` : '',
+          price? `Subtotal: Rp ${rupiah(subtotal)}` : '',
+          '',
+          'Nama:',
+          'Alamat:',
+          'Metode pembayaran:'
+        ].filter(Boolean).join('%0A');
+        const url = `https://wa.me/${WA_NUMBER}?text=${msg}`;
+        window.open(url,'_blank');
+      });
+    });
+
+    // Tahun berjalan
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
